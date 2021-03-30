@@ -1,20 +1,16 @@
-html {
-  font-size: 10px;
-  /* background: url('./images/people-background.png') bottom center; */
-  background-size: cover;
-}
-
-body,html {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: sans-serif;
 }
-
+body {
+  width: 100%;
+}
 .keys {
   display: flex;
   flex: 1;
-  min-height: 100vh;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
 }
 
@@ -48,4 +44,76 @@ kbd {
   text-transform: uppercase;
   letter-spacing: .1rem;
   color: #ffc600;
+}
+.container {
+  width: 100%;
+  padding: 5%;
+  display: grid;
+  grid-template-rows: 4fr 1fr;
+}
+img.kick {
+  width: 200px;
+}
+img.hihat {
+  width: 300px;
+}
+img.boom {
+  width: 200px;
+}
+img.ride {
+  width: 300px;
+}
+img.snare {
+  width: 200px;
+}
+img.tom {
+  width: 200px;
+}
+img.tink {
+  width: 100px;
+}
+img.claps {
+  width: 100px;
+}
+/* position */
+.drum-kit {
+  position: relative;
+  width: 100%;
+}
+.kick {
+  position: absolute;
+  top: 50%;
+  left: 42%;
+}
+.hihat {
+  position: absolute;
+  top: 55%;
+  left: 26%;
+}
+.boom {
+  position: absolute;
+  left: 0;
+}
+.ride {
+  position: absolute;
+  top: 38%;
+  right: 26%;
+}
+.snare {
+  position: absolute;
+  top: 70%;
+  left: 35%;
+}
+.tom {
+  position: absolute;
+  top: 71%;
+  right: 35%;
+}
+.tink {
+  position: absolute;
+  left: 46%;
+}
+.claps {
+  position: absolute;
+  right: 5%;
 }
